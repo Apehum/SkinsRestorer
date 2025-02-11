@@ -159,4 +159,13 @@ public interface SkinStorage {
      * @param identifier Skin identifier
      */
     void removeSkinData(SkinIdentifier identifier);
+
+    /**
+     * Gets a name of the skin by its identifier.
+     *
+     * @param identifier Skin identifier
+     *
+     * @return name of the skin
+     */
+    String getSkinName(SkinIdentifier identifier);
 }

@@ -386,6 +386,11 @@ public class SkinStorageImpl implements SkinStorage {
         }
     }
 
+    @Override
+    public String getSkinName(SkinIdentifier identifier) {
+        return ComponentHelper.convertJsonToPlain(resolveSkinName(identifier));
+    }
+
     /**
      * Checks if a player skin is expired and should be re-fetched from mojang.
      *
